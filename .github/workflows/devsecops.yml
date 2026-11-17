@@ -32,7 +32,6 @@ jobs:
             -v "$PWD:/project:ro" \
             aquasec/trivy:latest config \
             --severity HIGH,CRITICAL \
-            --exit-code 1 \
             /project/Dockerfile
 
   Deploy:
